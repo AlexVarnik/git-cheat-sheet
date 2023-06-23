@@ -244,7 +244,8 @@ graph LR;
   untracked -- "git add" --> staged;
   staged    -- "git commit"     --> tracked/comitted;
   tracked/comitted -- "изменения" --> modified;
-  modified -- "git add" --> staged
+  modified -- "git add" --> staged;
+  staged    -- "изменения"     --> modified;
 
 ``` 
 
