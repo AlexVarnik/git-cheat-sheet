@@ -249,6 +249,15 @@ graph LR;
 
 ``` 
 
+``` mermaid
+flowchart TD;
+    A[Untracked] -- git add --> B[Staged + Tracked];
+    B[Staged + Tracked] -- изменения --> C[Modified];
+    B[Staged + Tracked] -- git commit --> D[Tracked];
+    D[Tracked] -- изменения --> C[Modified];
+    C[Modified] -- git add --> B[Staged + Tracked];
+```
+
 
 
 
